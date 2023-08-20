@@ -13,53 +13,49 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="✚ ᴀᴅᴅ мє το ʏουя gяουρ ✚",
+                text="•─╼⃝𖠁𝐀𝙳𝙳 ◈ 𝐌𝙴 ◈ 𝐁𝙰𝙱𝚈𖠁⃝╾─•",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text=" ᴄᴏᴍᴍᴀɴᴅ ",
+                text="🦋𝐅𝐄𝐀𝐓𝐔𝐑𝐄🦋",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text=" ꜱᴇᴛᴛɪɴɢꜱ ", callback_data="settings_helper"
+                text="⚙️𝐒𝐄𝐓𝐓𝐈𝐍𝐆⚙️", callback_data="settings_helper"
             ),
         ],
      ]
     return buttons
 
+#extra shit
+BOT_USERNAME = ("{BOT_USERNAME}")
 
 def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
+    global GROUP_USERNAME
+    global CHANNEL_USERNAME
     buttons = [
         [
             InlineKeyboardButton(
-                text="нοᴡ το υѕє мє? ϲοммαиᴅ мєиυ.", callback_data="settings_back_helper"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="🥀 ɢяουᴘ 💥", url=f"http://t.me/TaitanXSupport",
-            ),
-            InlineKeyboardButton(
-                text="🥀 ᴄнαииєʟ 💥", url=f"https://t.me/TaitanXbot",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="✚ ᴀᴅᴅ мє το ʏουя gяουρ ✚",
+                text="•─╼⃝𖠁𝐀𝙳𝙳 ◈ 𝐌𝙴 ◈ 𝐁𝙰𝙱𝚈𖠁⃝╾─•",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
+        
         ],
         [
             InlineKeyboardButton(
-                text="✨ οωиєя ✨",
-                url=f"https://t.me/taitangamer",
-            ),
-            InlineKeyboardButton(
-                text="💮 ѕουяϲє 💮",
-                url=f"https://t.me/taitangamer",
+                text="۞ 𝐀𝙻𝙻 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ۞", callback_data="settings_back_helper"
             )
+        ],
+        [
+            InlineKeyboardButton(
+                text="𝐔𝙿𝙳𝙰𝚃𝙴𝚂🥀", url=f"https://t.me/{CHANNEL_USERNAME}",
+            ),
+        
+            InlineKeyboardButton(
+                text="𝐆𝚁𝙾𝚄𝙿✨", url=f"https://t.me/{GROUP_USERNAME}",
+            ),
         ],
      ]
     return buttons
